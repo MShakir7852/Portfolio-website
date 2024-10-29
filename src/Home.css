@@ -341,6 +341,15 @@ flex-direction: column;
     color: gold;
     cursor: pointer;
 }
+.Detail{
+    height: auto;
+    text-align: start;
+}
+.row{
+    height: auto;
+    width: 100%;
+    padding: 20px 0px;
+}
 
 
 

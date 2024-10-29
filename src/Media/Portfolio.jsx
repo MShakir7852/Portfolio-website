@@ -53,6 +53,7 @@ export default function Portfolio() {
 
   return (
     <div>
+      <h1>My Portfolio</h1>
       <ul className="Ul">
         <li onClick={() => setFilterCategory("All")}>All</li>
         <li onClick={() => setFilterCategory("Logo")}>Logo</li>
