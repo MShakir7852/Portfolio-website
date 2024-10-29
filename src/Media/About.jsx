@@ -53,7 +53,7 @@ export default function About() {
             </div>
             <div className="skills w-100">
                 <div class="progress w-100">
-                    <div className="progress-bar bg-success w-25" role="progressbar" style={{width:" 25%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  
                 </div>
             </div>
         </div>
