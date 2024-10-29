@@ -17,26 +17,26 @@ export default function About() {
                 <h2>About <span className="me">ME</span></h2>
             </div>
 
-            <div className="main-content">
+            <div className="main-content h-100">
                 <h3 className="text-center mt-4">Personal Infos</h3>
 
                 <div className="row main-content-box">
-                    <div className="col-12 col-md-6">
+                    <div className="col-12 col-md-6 p-5 m-auto">
                         <ul className="list-unstyled">
-                            <li><p>First Name: <b>Steve</b></p></li>
-                            <li><p>Age: <b>27 Years</b></p></li>
+                            <li><p>First Name: <b>Muhammad</b></p></li>
+                            <li><p>Age: <b>22 Years</b></p></li>
                             <li><p>Freelance: <b>Available</b></p></li>
-                            <li><p>Phone: <b>+21621184010</b></p></li>
-                            <li><p>Skype: <b>steve.milner</b></p></li>
+                            <li><p>Phone: <b>+3267852678</b></p></li>
+                            <li><p>Skype: <b>No</b></p></li>
                         </ul>
                     </div>
                     <div className="col-12 col-md-6">
                         <ul className="list-unstyled">
-                            <li><p>Last Name: <b>Milner</b></p></li>
-                            <li><p>Nationality: <b>Tunisian</b></p></li>
-                            <li><p>Address: <b>Tunis</b></p></li>
-                            <li><p>Email: <b>you@mail.com</b></p></li>
-                            <li><p>Languages: <b>French, English</b></p></li>
+                            <li><p>Last Name: <b>Shakir</b></p></li>
+                            <li><p>Nationality: <b>Pakistani</b></p></li>
+                            <li><p>Address: <b>Punjab</b></p></li>
+                            <li><p>Email: <b>mshakir7809797@gmail.com</b></p></li>
+                            <li><p>Languages: <b>French, English,Urdu</b></p></li>
                         </ul>
                     </div>
                 </div>
