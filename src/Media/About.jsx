@@ -1,6 +1,7 @@
 import React from 'react';
 
 export default function About() {
+    const Skill=[]
     return (
         <div>
             <div className='Heading-Text'>
@@ -52,10 +53,13 @@ export default function About() {
                 <h1 className='text-center p-5'>Skill</h1>
             </div>
             <div className="skills w-100">
-                <div class="progress w-100">
-                  
-                </div>
+                 <div className='border123'></div>
+                 <div className='border123'></div>
+                 <div className='border123'></div>
+                 <div className='border123'></div>
+                 <div className='border123'></div>
+                 <div className='border123'></div>
             </div>
-        </div>
+        </div >
     );
 }
