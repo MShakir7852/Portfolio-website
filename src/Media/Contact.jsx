@@ -46,50 +46,50 @@ export default function Contact() {
   };
 
   return (
-    <div className="container my-5">
+    <div className="container pt-3">
       <div className="row justify-content-center">
-      <div className="Detail col-md-8 col-lg-6 col-12  p-4 border rounded shadow-sm mt-5">
-      <h1 className="mb-4 text-warning">Don't be shy!</h1>
-      <p className="mb-4">
-        Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
-      </p>
-      <div className="Address mb-4">
-        <h5>
-          <FaMapMarkerAlt className="me-2 text-primary" /> Address Point
-        </h5>
-        <p>123 Street, New York City, United States Of America 750065.</p>
-      </div>
-      <div className="email mb-4">
-        <h5>
-          <FaEnvelope className="me-2 text-primary" /> Mail Me
-        </h5>
-        <p>steve@mail.com</p>
-      </div>
-      <div className="contact mb-4">
-        <h5>
-          <FaPhoneAlt className="me-2 text-primary" /> Call Me
-        </h5>
-        <p>+216 21 184 010</p>
-      </div>
-      <div className="social-media mt-4">
-        <h5>Connect with me:</h5>
-        <div className="d-flex gap-3 mt-3">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary">
-            <FaFacebook size={30} />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-info">
-            <FaTwitter size={30} />
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary">
-            <FaLinkedin size={30} />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-danger">
-            <FaInstagram size={30} />
-          </a>
-        </div>
-      </div>
+        <div className="Detail col-md-8 col-lg-6 col-12  p-4 shadow-sm mt-5">
+          <h1 className="mb-4 text-warning">Don't be shy!</h1>
+          <p className="mb-4">
+            Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+          </p>
+          <div className="Address mb-4">
+            <h5>
+              <FaMapMarkerAlt className="me-2 text-primary" /> Address Point
+            </h5>
+            <p>123 Street, New York City, United States Of America 750065.</p>
+          </div>
+          <div className="email mb-4">
+            <h5>
+              <FaEnvelope className="me-2 text-primary" /> Mail Me
+            </h5>
+            <p>steve@mail.com</p>
+          </div>
+          <div className="contact mb-4">
+            <h5>
+              <FaPhoneAlt className="me-2 text-primary" /> Call Me
+            </h5>
+            <p>+216 21 184 010</p>
+          </div>
+          <div className="social-media mt-4">
+            <h5>Connect with me:</h5>
+            <div className="d-flex gap-3 mt-3">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-primary">
+                <FaFacebook size={30} />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-info">
+                <FaTwitter size={30} />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary">
+                <FaLinkedin size={30} />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-danger">
+                <FaInstagram size={30} />
+              </a>
+            </div>
+          </div>
 
-    </div>
+        </div>
         <div className="col-md-8 col-lg-6 col-12">
           <h2 className="text-center mb-4">Contact Us</h2>
           {submitted && <div className="alert alert-success">Thank you for contacting us!</div>}

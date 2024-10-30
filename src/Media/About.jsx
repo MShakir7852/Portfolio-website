@@ -18,7 +18,7 @@ export default function About() {
             </div>
 
             <div className="main-content h-100">
-                <h3 className="text-center mt-4">Personal Infos</h3>
+                <h3 className="text-center mt-4">Personal Info</h3>
 
                 <div className="row main-content-box">
                     <div className="col-12 col-md-6 p-5 m-auto">
@@ -41,7 +41,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className="row my-5">
+                <div className="year row my-5">
                     <div className="col-12 col-md-3 col-lg-6 mb-3">
                         <div className="card text-center p-3">
                             <h1>12+</h1>

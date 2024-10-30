@@ -52,7 +52,7 @@ export default function Portfolio() {
     : portfolioItems.filter(item => item.category === filterCategory);
 
   return (
-    <div>
+    <div className='portfolio'>
       <h1>My Portfolio</h1>
       <ul className="Ul">
         <li onClick={() => setFilterCategory("All")}>All</li>
@@ -63,7 +63,7 @@ export default function Portfolio() {
       </ul>
       <div className="picture">
         {filteredItems.map(item => (
-          <div className="card" key={item.id}>
+          <div className="card" style={{borderRadius:"10px"}} key={item.id}>
             <img src={item.urlImag} alt={item.type} style={{ width: '100%', height: '200px' }} />
           </div>
         ))}

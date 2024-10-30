@@ -35,7 +35,7 @@ export default function Blog() {
 
   ]
   return (
-    <div>
+    <div className='Blog'>
       <h1 className='text-center'>My Blog</h1>
       <div className="container mt-4">
         <div className="row">

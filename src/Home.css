@@ -1,3 +1,17 @@
+.theme-light {
+    --background-color: white;
+    --heading:Black ;
+    --para: black;
+    --borders: black;
+  }
+  
+  .theme-dark {
+    --background-color: black;
+    --heading: white;
+    --para: white;
+    --borders: white;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -6,22 +20,21 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: var(--background-color);
 }
 
 .HomePage {
-    background-color: #ffffff;
+    background-color: var(--background-color);
     padding: 20px;
 }
 
 .Content {
-    background-color: #1c1c1e;
-    color: white;
+    background-color: var(--background-color);
     height: 400px;
-    width: 30%;
+    width: 25%;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px  var(--background-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     z-index: 1;
@@ -29,14 +42,14 @@ body {
 
 .Content:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px var(--background-color);
 }
 .sid {
-    height: 500px;
-    background-color: gold;
+    height: 100vh;
+    background-color:  gold;
     width: 50%;
-    transform: skewX(30deg );
-    margin-left:-450px;
+    transform: skewX(20deg );
+    margin-left:-300px;
     position: relative;
 }
 
@@ -51,16 +64,17 @@ body {
 }
 
 .contents h1 {
-    color: coral;
+    color: Gold;
     margin-bottom: 20px;
     font-size: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-shadow: 2px 2px 4px  var(--background-color);
     
 }
 
-.contents h2 {
+.contents h2,p {
     margin-bottom: 10px;
-    color: #333;
+    color:var(--para);
 }
 
 .row {
@@ -72,8 +86,8 @@ body {
 }
 
 .contents .aboutbtn {
-    width: 200px;
-    background-color: aliceblue;
+    width: 250px;
+    background-color:  var(--background-color);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -82,53 +96,49 @@ body {
     height: 50px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--background-color);
     cursor: pointer;
+    border: 1px solid var(--borders);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .contents .aboutbtn:hover {
-    background-color: #d5e6f2;
+    background-color: gold;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .contents .aboutbtn button {
     padding: 10px 20px;
     background-color: transparent;
-    border: none;
     font-weight: bold;
     font-size: 16px;
-    color: #333;
+    border: none;
+    color:var(--para);
     cursor: pointer;
 }
 
 .contents .aboutbtn button:hover {
-    color: white;
+    color: var(--para);
     z-index: 1;
 }
 
 .Icon {
-    padding: 15px;
-    background-color: gold;
-    border-radius: 50%;
-    margin-left: 10px;
-    position: relative;
-    z-index: 1;
-    /* transition: transform 0.3s ease; */
+   color: var(--para);
 }
 
 
-
 .contents .aboutbtn::after {
-    background-color: gold;
-    content: "More Abot Me";
+    background-color:var(--background-color);
+    content: "More About Me";
+    font-weight: bold;
     font-size: 16px;
-    color: white;
+    color:var(--para);
     cursor: pointer;
     height: 50px;
-    width: 50px;
+    width: 100px;
     position: absolute;
-    right: 0px;
+    right: 45px;
     border-radius: 20px 0px 0px 20px;
     transition: width 0.3s ease, height 0.3s ease, transform 0.3s ease;
     display: none;
@@ -141,12 +151,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 3s ease
+    transition: all 3s ease;
+    background-color: Gold;
 }
 .contents .aboutbtn:hover .contents .aboutbtn button{
     position: relative;
     z-index: 11;
-    color: white;
+    color:var(--para);
+    background-color: gold;
    
 }
 .NavBar {
@@ -166,7 +178,7 @@ body {
     flex-direction: column; /* Stacks items vertically */
     align-items: flex-end; /* Aligns items to the right */
     padding: 0;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     position: absolute;
     top: 1;
     gap: 30px;
@@ -186,7 +198,7 @@ body {
     font-size: 18px;
     transition: color 0.3s ease;
     padding: 15px 15px;
-    background-color: rgb(194, 191, 191);
+    background-color: rgb(203, 199, 199);
     border-radius: 50%;
 }
 
@@ -197,7 +209,8 @@ body {
 }
 .Heading-Text{
     text-align: center;
-position: relative;
+    position: relative;
+    color: var(--heading);
     
   
 }
@@ -207,6 +220,7 @@ position: relative;
     font-size: 50px;
     font-weight: 1400;
     letter-spacing: 20px;
+    color: var(--heading);
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -216,13 +230,19 @@ position: relative;
     font-weight: 600px;
     letter-spacing: 10px;
     text-transform: uppercase;
+    color: var(--heading);
     position: absolute;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     top: 15%;
     left: 43%;
 }
+.main-content h3{
+    color: var(--heading);
+    font-size: 30px;
+    font-weight: bold;
+}
 .text{
-    color: grey;
+    color: var(--para);
 }
 .me{
     color: gold;
@@ -230,7 +250,7 @@ position: relative;
 .main-content{
     height: 600px;
     width: 100%;
-    background-color: white;
+    background-color: var(--background-color);
     gap:40px;
     
 
@@ -250,7 +270,7 @@ position: relative;
     justify-content: space-between;
     align-items: center;
     line-height: 40px;
-    color: grey;
+    color: var(--para);
     
 }
 .box-content ul{
@@ -259,27 +279,26 @@ position: relative;
 .box h1{
 text-transform: uppercase;
 padding: 10px 20px;
-color: grey;
-}
-.box-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    flex-wrap: wrap;
+color: var(--para);
 }
 .card
 {
     height: 200px;
     padding: 10px 25px;
+    border: 1px solid var(--borders);
+    background-color: var(--background-color);
 }
 .card h1{
     color: gold;
 
 }
+.picture .card{
+    background-color: var(--background-color);
+}
 .skills {
     display: flex;
     justify-content: space-around;
+    background-color: var(--background-color);
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 100px;
@@ -307,18 +326,24 @@ color: grey;
     flex-wrap: wrap;
     gap: 30px;
     width: 100%;
-    height: 600px;
+    height: auto;
     /* margin: auto; */
+    background-color: var(--background-color);
     padding: 10px 40px;
 }
 .Ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--background-color);
 }
 .Ul li{
     list-style: none;
+    font-weight: bold;
+    font-size: 16px;
     margin-right: 20px;
+    background-color: var(--background-color);
+    transition: all 0.3s;
 }
 .Ul li:hover{
     color: gold;
@@ -327,11 +352,33 @@ color: grey;
 .Detail{
     height: auto;
     text-align: start;
+    font-weight: bold;
+    font-size: 16px;
 }
 .row{
     height: auto;
     width: 100%;
     padding: 20px 0px;
+}
+.NavBar .toggle{
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+
+}
+.container{
+    background-color: var(--background-color);
+    border-radius: 20px;
+}
+.portfolio{
+    background-color: var(--background-color);
+}
+.Blog{
+    background-color: var(--background-color);
+}
+.row .card{
+    background-color: var(--background-color);
 }
 
 
