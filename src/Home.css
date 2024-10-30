@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Rowdies", sans-serif;
     background-color: var(--background-color);
 }
 
@@ -68,6 +68,7 @@ body {
     margin-bottom: 20px;
     font-size: 50px;
     font-weight: bold;
+    font-family: "Rammetto One", sans-serif;
     text-shadow: 2px 2px 4px  var(--background-color);
     
 }
@@ -197,7 +198,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
-    padding: 15px 15px;
+    padding: 15px 18px;
     background-color: rgb(203, 199, 199);
     border-radius: 50%;
 }
@@ -205,22 +206,25 @@ body {
 .NavBar a:hover {
     color: white; /* Hover effect */
     background-color: gold;
+    font-family: "Rammetto One", sans-serif;
 
 }
 .Heading-Text{
     text-align: center;
     position: relative;
     color: var(--heading);
+    font-family: "Rammetto One", sans-serif;
     
   
 }
 .Heading-Text h1{
     opacity: 0.1;
     padding: 10px 0px;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 1400;
     letter-spacing: 20px;
     color: var(--heading);
+    font-family: "Rammetto One", sans-serif;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -231,14 +235,14 @@ body {
     letter-spacing: 10px;
     text-transform: uppercase;
     color: var(--heading);
+    font-family: "Rammetto One", sans-serif;
     position: absolute;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    top: 15%;
-    left: 43%;
+    top: 25%;
+    left: 38%;
 }
 .main-content h3{
     color: var(--heading);
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
 }
 .text{
@@ -340,10 +344,12 @@ color: var(--para);
 .Ul li{
     list-style: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 20px;
+    color: var(--heading);
     background-color: var(--background-color);
     transition: all 0.3s;
+    font-family: "Rammetto One", sans-serif;
 }
 .Ul li:hover{
     color: gold;
@@ -352,7 +358,7 @@ color: var(--para);
 .Detail{
     height: auto;
     text-align: start;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 16px;
 }
 .row{
@@ -365,21 +371,80 @@ color: var(--para);
     right: 0;
     top: 0;
     margin-right: 10px;
+    background-color: rgb(203, 199, 199);
 
 }
-.container{
+.container-fluid {
     background-color: var(--background-color);
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 .portfolio{
     background-color: var(--background-color);
+    height: 600px;
 }
+.portfolio h1{
+    font-family: "Rammetto One", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: var(--heading);
+    padding: 20px 0px;
+    
+}
+
 .Blog{
     background-color: var(--background-color);
 }
+.Blog h1{
+    font-family: "Rammetto One", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--heading);
+
+}
 .row .card{
     background-color: var(--background-color);
+    border: 1px solid var(--para);
 }
+.Detail h5{
+    color: var(--heading);
+}
+.Form label{
+    color: var(--heading);
+}
+.heading{
+    color: var(--heading);
+    font-family: "Rammetto One", sans-serif;
+    font-size: 40px;
 
+}
+.social-media a{
+    padding: 10px 10px;
+    border-radius: 50%;
+    /* color:transparent; */
+    transition: all 0.2s;
+}
+.social-media a:hover{
+    background-color: gold;
+    /* color: var(--heading); */
+
+}
+.submit-btn{
+    border: 1px solid gold;
+    /* background-color: none; */
+}
+.submit-btn:hover{
+    background-color: rgba(255, 217, 0, 0.938);
+}
+.card-body h5{
+    color: var(--heading);
+    transition: all 0.2s;
+
+}
+.card:hover .card-body h5 {
+    color: gold;
+}
+.Shoy{
+    font-family: "Rammetto One", sans-serif;
+}
 
 

@@ -46,10 +46,11 @@ export default function Contact() {
   };
 
   return (
-    <div className="container pt-3">
+    <div className="container-fluid p-5">
+          <h2 className=" heading text-center mb-4">Contact <span style={{color:"gold"}}>Us</span></h2>
       <div className="row justify-content-center">
         <div className="Detail col-md-8 col-lg-6 col-12  p-4 shadow-sm mt-5">
-          <h1 className="mb-4 text-warning">Don't be shy!</h1>
+          <h1 className="Shoy mb-4 text-warning">Don't be shy!</h1>
           <p className="mb-4">
             Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
           </p>
@@ -57,19 +58,19 @@ export default function Contact() {
             <h5>
               <FaMapMarkerAlt className="me-2 text-primary" /> Address Point
             </h5>
-            <p>123 Street, New York City, United States Of America 750065.</p>
+            <p>P/O MuhammadPur,Tehsil Jmapur,District Rajanpur</p>
           </div>
           <div className="email mb-4">
             <h5>
               <FaEnvelope className="me-2 text-primary" /> Mail Me
             </h5>
-            <p>steve@mail.com</p>
+            <p>mshakir7809797@gmail.com</p>
           </div>
           <div className="contact mb-4">
             <h5>
               <FaPhoneAlt className="me-2 text-primary" /> Call Me
             </h5>
-            <p>+216 21 184 010</p>
+            <p>+92 326 78 52 678</p>
           </div>
           <div className="social-media mt-4">
             <h5>Connect with me:</h5>
@@ -91,9 +92,9 @@ export default function Contact() {
 
         </div>
         <div className="col-md-8 col-lg-6 col-12">
-          <h2 className="text-center mb-4">Contact Us</h2>
+          
           {submitted && <div className="alert alert-success">Thank you for contacting us!</div>}
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className='Form'>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">Name</label>
               <input
@@ -142,7 +143,7 @@ export default function Contact() {
               ></textarea>
               {errors.message && <div className="invalid-feedback">{errors.message}</div>}
             </div>
-            <button type="submit" className="btn btn-primary w-100">Submit</button>
+            <button type="submit" className="submit-btn btn btn-warning w-50 m-auto">Submit</button>
           </form>
         </div>
 

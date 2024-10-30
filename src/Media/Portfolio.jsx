@@ -53,7 +53,8 @@ export default function Portfolio() {
 
   return (
     <div className='portfolio'>
-      <h1>My Portfolio</h1>
+      {/* <h1 className='portfolioW'>Works</h1> */}
+      <h1>My <span style={{color:"gold"}}>Portfolio</span></h1>
       <ul className="Ul">
         <li onClick={() => setFilterCategory("All")}>All</li>
         <li onClick={() => setFilterCategory("Logo")}>Logo</li>

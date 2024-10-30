@@ -14,8 +14,8 @@ export default function Blog() {
     },
     {
       blogImage: "https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblog-post-3.aaa1f372.jpg&w=1920&q=75",
-      blogName: "Everything You Need to Know About Web Accessibility",
-      blogDiscription: "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ma"
+      blogName: "Everything You Need to Know About Web ",
+      blogDiscription: "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore "
     },
     {
       blogImage: "https://tunis-nextjs.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fblog-post-4.61f2f58c.jpg&w=1920&q=75",
@@ -36,7 +36,7 @@ export default function Blog() {
   ]
   return (
     <div className='Blog'>
-      <h1 className='text-center'>My Blog</h1>
+      <h1 className='text-center'>My <span style={{color:"gold"}}>Blog</span></h1>
       <div className="container mt-4">
         <div className="row">
           {blogpostitem.map((el, index) => (

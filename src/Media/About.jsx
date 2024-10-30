@@ -11,7 +11,7 @@ export default function About() {
     ];
 
     return (
-        <div className="container mt-4">
+        <div className="container-fluid">
             <div className="Heading-Text text-center">
                 <h1>Resume</h1>
                 <h2>About <span className="me">ME</span></h2>
