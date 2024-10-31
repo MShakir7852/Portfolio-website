@@ -7,7 +7,9 @@ export default function About() {
         { name: "CSS", level: "70%" },
         { name: "Bootstrap", level: "80%" },
         { name: "JavaScript", level: "70%" },
-        { name: "React.Js", level: "80%" }
+        { name: "React.Js", level: "80%" },
+        { name: "Node.Js", level: "80%" }
+
     ];
 
     return (
@@ -49,18 +51,18 @@ export default function About() {
                         </div>
                     </div>
                     <div className="col-12 col-md-3 col-lg-6 mb-3">
-                        <div className="card text-center p-3">
+                        <div className="card text-center ">
                             <h1>97+</h1>
                             <p>Completed Projects</p>
                         </div>
                     </div>
                     <div className="col-12 col-md-3 col-lg-6 mb-3">
-                        <div className="card text-center p-3">
+                        <div className="card text-center ">
                             <h1>81+</h1>
                             <p>Happy Clients</p>
                         </div>
                     </div>
-                    <div className="col-12 col-md-3 col-lg-6 mb-3">
+                    <div className="col-12 col-md-3 col-lg-6">
                         <div className="card text-center p-3">
                             <h1>53+</h1>
                             <p>Awards Won</p>
@@ -70,15 +72,15 @@ export default function About() {
             </div>
 
             <div className="skil-text">
-                <h3 className="text-center p-5">Skills</h3>
+                <h3 className="text-center">Skills</h3>
             </div>
 
-            <div className="skills mt-5 row">
+            <div className="skills ">
                 {Skill.map((skill, index) => (
-                    <div key={index} className="col-12 col-md-6 mb-3">
-                        <div className="border123 d-flex justify-content-between align-items-center border p-2">
-                            <p className="mb-0">{skill.name}</p>
-                            <p className="mb-0">{skill.level}</p>
+                    <div key={index} className="col-12 col-md-6 col-lg-4">
+                        <div className="border123">
+                            <p >{skill.name}</p>
+                            <p >{skill.level}</p>
                         </div>
                     </div>
                 ))}

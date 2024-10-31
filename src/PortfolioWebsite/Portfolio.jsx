@@ -50,7 +50,7 @@ export default function Portfolio() {
   const filteredItems = filterCategory === "All"
     ? portfolioItems
     : portfolioItems.filter(item => item.category === filterCategory);
-
+ 
   return (
     <div className='portfolio'>
       {/* <h1 className='portfolioW'>Works</h1> */}
@@ -64,7 +64,7 @@ export default function Portfolio() {
       </ul>
       <div className="picture">
         {filteredItems.map(item => (
-          <div className="card" style={{borderRadius:"10px"}} key={item.id}>
+          <div className="card col-12 col-md-6 col-lg-3" style={{borderRadius:"10px"}} key={item.id}>
             <img src={item.urlImag} alt={item.type} style={{ width: '100%', height: '200px' }} />
           </div>
         ))}

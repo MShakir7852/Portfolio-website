@@ -3,16 +3,14 @@ import { Link } from 'react-router-dom';
 import { FaHome, FaBlog, FaUserAlt, FaFirstAid, FaAddressBook, FaMoon, FaSun } from "react-icons/fa";
 
 export default function Nav() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
+  const [Darkmode,setDarkmode]=useState(false);
   useEffect(() => {
-    document.body.className = isDarkMode ? 'theme-dark' : 'theme-light';
-  }, [isDarkMode]);
-
-  const toggleTheme = () => {
-    setIsDarkMode((prevMode) => !prevMode);
-  };
-
+    document.body.className=Darkmode?'theme-dark ':"theme-light ";
+    
+  }, [Darkmode]);
+  const toggleTheme=()=>{
+    setDarkmode((prev)=>!prev);
+  }
   return (
     <div>
       <div className="NavBar">
@@ -22,7 +20,7 @@ export default function Nav() {
             onClick={toggleTheme}
             style={{ borderRadius: "50%", padding: "10px 15px", border: "none" }}
           >
-            {isDarkMode ? <FaSun /> : <FaMoon />}
+            {Darkmode ? <FaSun /> : <FaMoon />}
           </button>
           <li><Link to="/"><FaHome className='icon' /></Link></li>
           <li><Link to="./about"><FaUserAlt className='icon' /> </Link></li>

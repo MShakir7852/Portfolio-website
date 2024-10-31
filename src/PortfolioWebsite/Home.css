@@ -29,17 +29,16 @@ body {
 }
 
 .Content {
-    background-color: var(--background-color);
+    background-color:var(--background-color);
     height: 400px;
-    width: 25%;
+    width: 20%;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px  var(--background-color);
+    box-shadow: 0 4px 8px  black;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     z-index: 1;
 }
-
 .Content:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px var(--background-color);
@@ -66,7 +65,7 @@ body {
 .contents h1 {
     color: Gold;
     margin-bottom: 20px;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     font-family: "Rammetto One", sans-serif;
     text-shadow: 2px 2px 4px  var(--background-color);
@@ -171,6 +170,7 @@ body {
     justify-content: center;
     align-items: flex-end;
     padding: 20px;
+    z-index: 10;
 }
 
 .NavBar ul {
@@ -197,8 +197,8 @@ body {
     color: black;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease;
-    padding: 15px 18px;
+    transition: color 0.3s;
+    padding: 16px 18px;
     background-color: rgb(203, 199, 199);
     border-radius: 50%;
 }
@@ -207,6 +207,7 @@ body {
     color: white; /* Hover effect */
     background-color: gold;
     font-family: "Rammetto One", sans-serif;
+    /* padding: 0; */
 
 }
 .Heading-Text{
@@ -214,6 +215,9 @@ body {
     position: relative;
     color: var(--heading);
     font-family: "Rammetto One", sans-serif;
+    width: 100%;
+    margin: auto;
+    
     
   
 }
@@ -238,7 +242,7 @@ body {
     font-family: "Rammetto One", sans-serif;
     position: absolute;
     top: 25%;
-    left: 38%;
+    left: 20%;
 }
 .main-content h3{
     color: var(--heading);
@@ -261,8 +265,12 @@ body {
 }
 .main-content-box{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+
 }
 .main-content .box{
     height: 400px;
@@ -279,6 +287,16 @@ body {
 }
 .box-content ul{
     list-style: none;
+   
+}
+.list-unstyled{
+    display: flex;
+    justify-content: center;
+    text-align:center ;
+    /* align-items: start; */
+    /* align-items: start; */
+    flex-direction: column;
+    margin: auto;
 }
 .box h1{
 text-transform: uppercase;
@@ -291,6 +309,12 @@ color: var(--para);
     padding: 10px 25px;
     border: 1px solid var(--borders);
     background-color: var(--background-color);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
 }
 .card h1{
     color: gold;
@@ -300,28 +324,33 @@ color: var(--para);
     background-color: var(--background-color);
 }
 .skills {
-    display: flex;
-    justify-content: space-around;
-    background-color: var(--background-color);
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px 100px;
-    
+   background-color: var(--background-color);
+   width: 100%;
+   height: auto;
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-items: center;
+   padding: 10px 0px;
+
 }
 
 
 .border123{
     border: 9px solid rgb(191, 189, 189);
-    border-right: 9px solid rgb(13, 230, 13);
-    border-bottom: 9px solid rgb(13, 230, 13);
-    border-top: 9px solid rgb(13, 230, 13);
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+     border-right: 9px solid gold;
+    border-bottom: 9px solid gold;
+    /* border-top: 9px solid rgb(13, 230, 13);  */
+    background-color: var(--background-color);
+   border-radius: 50%;
+   height: 150px;
+   width: 150px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+  
 }
 .picture{
     display: flex;
@@ -440,11 +469,28 @@ color: var(--para);
     transition: all 0.2s;
 
 }
-.card:hover .card-body h5 {
+.card:hover .card-body h5  {
     color: gold;
+}
+.card-img-top{
+    background-color: var(--background-color);
+    transition: all 0.2s;
+    width: 100%;
+}
+.card{
+    overflow: hidden;
+}
+.card:hover .card-img-top{
+    transform: scale(1.1);
 }
 .Shoy{
     font-family: "Rammetto One", sans-serif;
+}
+.skil-text h3{
+    font-family: "Rammetto One", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--heading);
 }
 
 

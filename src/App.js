@@ -1,11 +1,12 @@
 import React from 'react';
-import Home from './Home';
+import Home from './PortfolioWebsite/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Nav from './Media/Nav';
-import About from './Media/About';
-import Portfolio from './Media/Portfolio';
-import Contact from './Media/Contact';
-import Blog from './Media/Blog';
+import Nav from './PortfolioWebsite/Nav';
+import About from './PortfolioWebsite/About';
+import Portfolio from './PortfolioWebsite/Portfolio';
+import Contact from './PortfolioWebsite/Contact';
+import Blog from './PortfolioWebsite/Blog';
+import "./PortfolioWebsite/Home.css"
 
 export default function App() {
   return (
@@ -22,6 +23,8 @@ export default function App() {
         </Routes>
       </div>
     </Router>
+
+    
     </>
   );
 }

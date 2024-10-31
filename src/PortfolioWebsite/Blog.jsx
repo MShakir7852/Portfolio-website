@@ -40,7 +40,7 @@ export default function Blog() {
       <div className="container mt-4">
         <div className="row">
           {blogpostitem.map((el, index) => (
-            <div key={index} className="col-12 col-sm-6 col-md-4 mb-4">
+            <div key={index} className="col-12 col-sm-6 col-md-4">
               <div className="card h-100" style={{ width: "100%" }}>
                 <img src={el.blogImage} className="card-img-top" alt={el.blogName} />
                 <div className="card-body">
